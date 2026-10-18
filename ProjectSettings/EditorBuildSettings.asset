@@ -5,8 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/FurniCheck_TableTest FurniCheck_TableTest.unity
+    guid: d8f87b21c104743448e1d0082e293a53
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6bc5777696ad69a41a0a0567b886b937, type: 2}
+    com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: a0ba990e5bf2dad43a2b23e466826755, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 423453d92c651cd44ad15db6181fba59, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 6bb314413b5e35f4a8388caf1d6accd8, type: 2}
