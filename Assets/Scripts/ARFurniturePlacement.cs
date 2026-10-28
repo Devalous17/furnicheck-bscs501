@@ -31,6 +31,25 @@ public class ARFurniturePlacement : MonoBehaviour
         new(-0.04f, -0.04f), new(0.04f, -0.04f),
         new(-0.04f, 0.04f), new(0.04f, 0.04f)
     };
+    void OnEnable()
+    {
+        // Runs every time ARRoot is switched on by the website's "View in AR" button.
+        if (WebUIController.SelectedFurniture != null)
+            furniturePrefab = WebUIController.SelectedFurniture;
+
+        ClearPlacedFurniture();
+    }
+
+    private void ClearPlacedFurniture()
+    {
+        if (placedFurniture != null)
+            Destroy(placedFurniture);
+        placedFurniture = null;
+
+        if (placedAnchor != null)
+            Destroy(placedAnchor.gameObject);
+        placedAnchor = null;
+    }
 
     void Update()
     {
